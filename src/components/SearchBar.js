@@ -9,7 +9,7 @@ const SearchBar = ({ searchQuery, handleSearch, clearSearch }) => {
             <FontAwesomeIcon icon={faSearch} className="search-icon" />
             <input
                 type="text"
-                placeholder="Search by movie title, genre, or actor"
+                placeholder="Search"
                 value={searchQuery}
                 onChange={handleSearch}
                 className="search-bar"
