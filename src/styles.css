@@ -133,6 +133,16 @@ body {
     }
 
     .movie-detail-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--detail-overlay-color);
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        z-index: 1000;
         overflow: scroll;
     }
 
