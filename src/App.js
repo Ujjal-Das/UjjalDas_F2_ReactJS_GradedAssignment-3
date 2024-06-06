@@ -26,6 +26,14 @@ const App = () => {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    if (selectedMovie) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [selectedMovie]);
+
   const handleFavorite = (movie) => {
     if (favorites.find(fav => fav.id === movie.id)) {
       setFavorites(favorites.filter(fav => fav.id !== movie.id));
