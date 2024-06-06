@@ -82,13 +82,14 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
+        gap: 40px;
         align-items: start;
-        justify-items: start;
+        justify-items: space-between;
         grid-template-areas:
             "logo theme-toggle"
             "theaters comingSoon"
             "topRatedIndian topRated"
-            "favorites search";
+            "favorites favorites";
     }
 
     .theme-toggle {
@@ -121,6 +122,14 @@ body {
 
     .favorites {
         grid-area: favorites;
+    }
+
+    .nav-logo {
+        padding: 14px;
+    }
+
+    .theme-toggle {
+        padding: 14px;
     }
 }
 
